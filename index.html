@@ -1,16 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
+  <!-- boilerplate -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
+  <!-- share card and SEO setup -->
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:image" content="/assets/images/3c120_kitt_peak_observatory.jpg">
+  <meta name="twitter:image" content="/assets/images/3c120_kitt_peak_observatory.jpg">
   <link rel="canonical" href="https://katyaleidig.com" itemprop="url" />
   <meta name="twitter:domain" value="katyaleidig.com" />
-
   <meta name="keywords" content="Katya Leidig, Astronomer, Astrophysics" />
   <meta property="og:type" content="website" />
 
@@ -18,12 +22,154 @@
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐢</text></svg>">
 
-  <script defer="defer" src="/assets/main.js"></script>
+  <!-- tailwind css -->
+  <!-- https://tailwindcss.com/docs/installation -->
+  <script>
+    console.warn('👇 ignore the below until you\'re ready to move to a project with a build step')
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          unica: ['Unica', 'Helvetica', 'sans-serif'],
+        },
+      }
+    }
+  </script>
+
+  <link rel="preload" href="/assets/fonts/unica.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link href="/assets/styles.css" rel="stylesheet">
+  <script defer="defer" src="/assets/main.js"></script>
+
 </head>
 
-<body>
-  <h1 class="red">It me.</h1>
+<body class="relative">
+  <div id="home">
+    <!-- scroll to top utility -->
+  </div>
+  <div class="border-t border-b border-black sticky -top-[calc(50vh-74px)] z-30">
+    <div class="full-background border-black h-[50vh] mb-[-74px]">
+    </div>
+
+    <!-- navigation -->
+    <div class="inverse-text h-[74px] border-t flex px-2 py-6 text-center justify-center font-unica">
+      <div class="px-2 cursor-pointer rounded-lg hover:bg-neutral-800">
+        <a href="#home">
+          Home
+        </a>
+      </div>
+      <div class="px-2 cursor-pointer rounded-lg hover:bg-neutral-800">
+        <a href="#research">
+          Research
+        </a>
+      </div>
+      <div class="px-2 cursor-pointer rounded-lg hover:bg-neutral-800">
+        <a href="#outreach">
+          Outreach
+        </a>
+      </div>
+      <div class="px-2 cursor-pointer rounded-lg hover:bg-neutral-800">
+        <a href="#resources">
+          Resources
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="py-6 px-10 mx-auto max-w-prose h-[50vh] min-h-[400px] flex flex-col justify-center">
+    <p class="text-xl font-unica mb-4">
+      Hi, I'm Katya Leidig.
+    </p>
+    <p class="text-lg mb-4">
+      I'm a Graduate Assistant and PhD Candidate in the
+      <a class="underline-link" href="https://www.astro.umd.edu/">Department of Astronomy</a>
+      at the
+      <a class="underline-link" href="https://www.umd.edu/">University of Maryland</a>.
+    </p>
+    <p class="text-lg">
+      I work with cosmological simulations to describe the formation of galaxies and presence of dark matter in
+      the universe.
+    </p>
+    <div class="my-10 mx-auto opacity-80 flex items-center">
+      <a class="mx-3" href="https://twitter.com/KatyaLeidig" target="_blank" rel="noreferrer">
+        <img class="h-[20px]" src="/assets/feather_icons/twitter_x.svg">
+      </a>
+      <a class="mx-3" href="https://www.linkedin.com/in/katya-leidig-10b910103/" target="_blank" rel="noreferrer">
+        <img src="/assets/feather_icons/linkedin.svg">
+      </a>
+      <a class="mx-3" href="mailto:kleidig@umd.edu" target="_blank" rel="noreferrer">
+        <img src="/assets/feather_icons/mail.svg">
+      </a>
+
+    </div>
+  </div>
+
+  <div id="research" class="border-t border-black">
+    <div class="py-10 px-10 mx-auto max-w-prose min-h-[400px]">
+      <h1 class="font-unica text-2xl mb-8">Research</h1>
+      <h2 class="font-unica text-xl mb-4">Stellar Halo Mass Connection</h2>
+      <p class="mb-4">Coming soon.</p>
+      <h2 class="font-unica text-xl mb-4">Cross-Correlation of Galaxy Properties</h2>
+      <p class="mb-4">Coming soon.</p>
+    </div>
+  </div>
+
+  <div id="outreach" class="border-t border-black">
+    <div class="py-10 px-10 mx-auto max-w-prose min-h-[400px]">
+      <h1 class="font-unica text-2xl mb-8">Outreach</h1>
+      <h2 class="font-unica text-xl mb-4">GRAD-MAP</h2>
+      <p class="mb-4">
+        <a href="https://www.umdgradmap.org/" target="_blank" rel="noreferrer"
+          class="underline-link">https://www.umdgradmap.org/</a>
+      </p>
+      <h2 class="font-unica text-xl mb-4">Planetarium Shows</h2>
+      <p class="mb-4">
+        <a href="https://www.nps.gov/planyourvisit/event-details.htm?id=1E9097F7-C4B1-B4F5-4EF29D4C6A7DEF44"
+          target="_blank" rel="noreferrer" class="underline-link">Rock Creek Park Planetarium Stellar Star Talk</a>
+      </p>
+      <!-- making astronomy accessible -->
+    </div>
+  </div>
+
+  <div id="resources" class="border-t border-black">
+    <div class="py-10 px-10 mx-auto max-w-prose min-h-[400px]">
+      <h1 class="font-unica text-2xl mb-8">Resources</h1>
+      <h2 class="font-unica text-xl mb-4">Commonly Requested Data</h2>
+      <p class="mb-4">
+        Coming soon.
+      </p>
+      <h2 class="font-unica text-xl mb-4">Science Resources</h2>
+      <!-- how to read a paper blog post -->
+      <p class="mb-4">
+        Coming soon.
+      </p>
+      <h2 class="font-unica text-xl mb-4">Academic/Professional Resources</h2>
+      <!-- nsf advice -->
+      <p class="mb-4">
+        Coming soon.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="border-t border-black">
+    <div class="py-6 mx-auto max-w-prose flex justify-between text-sm">
+      <div>
+        © Katya Leidig <span data-replace="currentYear" />
+      </div>
+      <div>
+        Cover image: <a class="underline-link" target="_blank" rel="noreferrer"
+          href="https://www.jstor.org/stable/40675743">Astronomical Society of the
+          Pacific</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- loading cover -->
+  <div id="loading-cover"
+    class="z-50 h-screen min-h-[10000px] w-screen min-w-[10000px] absolute bg-neutral-100 top-0 bottom-0 left-0 right-0 transition-all ease-out">
+  </div>
+
 </body>
 
 </html>

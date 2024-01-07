@@ -1,3 +1,23 @@
-.red {
-  color: red;
+@font-face {
+  font-family: Unica;
+  src: url("/assets/fonts/unica.woff2");
+}
+
+html {
+  height: 100vh;
+}
+
+.underline-link {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.full-background {
+  background: url(/assets/images/3c120_kitt_peak_observatory.png) 50% / cover;
+  background-repeat: no-repeat;
+}
+
+.inverse-text {
+  color: white;
+  mix-blend-mode: difference;
 }
