@@ -2,7 +2,7 @@
 
 ## Getting started
 
-Run a local webserver with `python -m SimpleHTTPServer 8000`.
+Run a local webserver with `python -m http.server 8000`.
 
 Visit `http://localhost:8000/`.
 
