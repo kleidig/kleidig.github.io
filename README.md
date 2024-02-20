@@ -4,6 +4,8 @@
 
 Run a local webserver with `python -m http.server 8000`.
 
+(Or if you're on python 2, ` python -m SimpleHTTPServer 8000`)
+
 Visit `http://localhost:8000/`.
 
 ## What's in the box
