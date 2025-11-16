@@ -48,20 +48,21 @@
   <div id="home">
     <!-- scroll to top utility -->
   </div>
-  <div class="border-t border-b border-black sticky top-0 z-30 w-full bg-neutral-100">
+  <div class="border-t border-b border-black sticky -top-[calc(50vh-74px)] z-30 w-full">
+    <div class="full-background border-black h-[50vh] bg-neutral-100 flex justify-stretch items-end w-full">
       <!-- navigation -->
-      <div class="h-[74px] flex px-2 py-6 font-unica mx-auto max-w-prose text-black">
-        <div class="px-2 cursor-pointer rounded-lg hover:bg-neutral-300">
+      <div class="inverse-text h-[74px] border-t flex px-2 py-6 text-center justify-center font-unica w-full">
+        <div class="px-2 cursor-pointer rounded-lg hover:bg-neutral-800">
           <a href="#home">
             Home
           </a>
         </div>
-        <div class="px-2 cursor-pointer rounded-lg hover:bg-neutral-300">
+        <div class="px-2 cursor-pointer rounded-lg hover:bg-neutral-800">
           <a href="#research">
             Research
           </a>
         </div>
-        <div class="px-2 cursor-pointer rounded-lg hover:bg-neutral-300">
+        <div class="px-2 cursor-pointer rounded-lg hover:bg-neutral-800">
           <a href="#outreach">
             Outreach
           </a>
@@ -72,64 +73,55 @@
           </a>
         </div> -->
       </div>
-  </div>
-  <div class="py-6 px-2 mx-auto max-w-prose min-h-[400px] flex flex-col md:flex-row justify-center items-center gap-8">
-    <div class="flex-1">
-      <p class="text-xl font-unica mb-4">
-        Hi, I'm Katya Leidig :)
-      </p>
-      <p class="text-lg mb-4">
-        I'm a
-        <a class="underline-link" href="https://www.nsfgrfp.org/">NSF Graduate Reseach Fellow</a>
-        and PhD Candidate in the
-        <a class="underline-link" href="https://www.astro.umd.edu/">Department of Astronomy</a>
-        at the University of Maryland, where I am part of the research group
-        <a class="underline-link" href="https://www.benediktdiemer.com/group/">Turtles All the Way Down</a>.
-      </p>
-      <p class="text-lg">
-        I work with cosmological simulations to understand the connection between dark matter halos and the galaxies that
-        live in them.
-        I also enjoy running teaching and outreach programs in the local community.
-      </p>
     </div>
-    <div class="flex flex-col items-center gap-5">
+  </div>
+  <div class="py-6 px-10 mx-auto max-w-prose min-h-[400px] flex flex-col justify-center">
+    <p class="text-xl font-unica mb-4">
+      Hi, I'm Katya Leidig :)
+    </p>
+    <p class="text-lg mb-4">
+      I'm a 
+      <a class="underline-link" href="https://www.nsfgrfp.org/">NSF Graduate Reseach Fellow</a>
+      and PhD Candidate in the
+      <a class="underline-link" href="https://www.astro.umd.edu/">Department of Astronomy</a>
+      at the
+      <a class="underline-link" href="https://www.umd.edu/">University of Maryland</a>.
+    </p>
+    <p class="text-lg">
+      I work with cosmological simulations to understand the connection between dark matter halos and the galaxies that
+      live in them.
+      I also enjoy running teaching and outreach programs in the local community.
+    </p>
+    <div class="block mx-auto my-5">
       <img src="/assets/images/photo_telescope.jpeg" class="relative max-w-[150px] rounded-full" />
-      <div class="opacity-80 flex items-center">
-        <!-- <a class="mx-3" href="https://twitter.com/KatyaLeidig" target="_blank" rel="noreferrer">
-          <img class="h-[20px]" src="/assets/feather_icons/twitter_x.svg">
-        </a> -->
-        <a class="mx-3" href="https://www.linkedin.com/in/katya-leidig-10b910103/" target="_blank" rel="noreferrer">
-          <img src="/assets/feather_icons/linkedin.svg">
-        </a>
-        <a class="mx-3" href="https://orcid.org/0009-0003-8358-8320" target="_blank" rel="noreferrer">
-          <img src="/assets/images/ORCID_iD.png" class="h-[24px]">
-        </a>
-        <a class="mx-3" href="mailto:kleidig@umd.edu" target="_blank" rel="noreferrer">
-          <img src="/assets/feather_icons/mail.svg">
-        </a>
-      </div>
+    </div>
+    <div class="mx-auto opacity-80 flex items-center">
+      <a class="mx-3" href="https://twitter.com/KatyaLeidig" target="_blank" rel="noreferrer">
+        <img class="h-[20px]" src="/assets/feather_icons/twitter_x.svg">
+      </a>
+      <a class="mx-3" href="https://www.linkedin.com/in/katya-leidig-10b910103/" target="_blank" rel="noreferrer">
+        <img src="/assets/feather_icons/linkedin.svg">
+      </a>
+      <a class="mx-3" href="mailto:kleidig@umd.edu" target="_blank" rel="noreferrer">
+        <img src="/assets/feather_icons/mail.svg">
+      </a>
     </div>
 
   </div>
 
 
   <div id="research" class="border-t border-black scroll-mt-[74px]">
-    <div class="py-6 px-2 mx-auto max-w-prose min-h-[400px]">
+    <div class="py-10 px-10 mx-auto max-w-prose min-h-[400px]">
       <h1 class="font-unica text-2xl mb-8">Research</h1>
-
-      <p class="mb-4"> I study what parts of galaxy clusters can reveal the properties of their underlying dark matter halos. 
-        Recently, I modeled the diffuse, low-surface-brightness stellar outskirts of brightest cluster galaxies (BCGs) using cosmological simulations and realistic mock-observing pipelines. 
-        By measuring “outskirt stellar mass” and full stellar mass density profiles, I developed new ways to use BCG stellar halos as precise tracers of halo mass. 
-        This model fits into the broader goal of building a multi-tracer framework that connects what we observe—stars, satellites, and hot gas—to the evolution of galaxy clusters and the dark matter that shapes them.</p>
-      <!-- <h2 class="font-unica text-xl mb-4">Stellar Halo Mass Connection</h2>
+      <h2 class="font-unica text-xl mb-4">Stellar Halo Mass Connection</h2>
       <p class="mb-4">Coming soon.</p>
       <h2 class="font-unica text-xl mb-4">Cross-Correlation of Galaxy Properties</h2>
-      <p class="mb-4">Coming soon.</p> -->
+      <p class="mb-4">Coming soon.</p>
     </div>
   </div>
 
   <div id="outreach" class="border-t border-black scroll-mt-[74px]">
-    <div class="py-6 px-2 mx-auto max-w-prose min-h-[400px]">
+    <div class="py-10 px-10 mx-auto max-w-prose min-h-[400px]">
       <h1 class="font-unica text-2xl mb-8">Outreach</h1>
       <h2 class="font-unica text-xl mb-4">GRAD-MAP</h2>
       <p class="mb-4">
@@ -145,7 +137,7 @@
     </div>
   </div>
 
-  <!-- <div id="resources" class="border-t border-black scroll-mt-[74px]">
+  <div id="resources" class="border-t border-black scroll-mt-[74px]">
     <div class="py-10 px-10 mx-auto max-w-prose min-h-[400px]">
       <h1 class="font-unica text-2xl mb-8">Resources</h1>
       <h2 class="font-unica text-xl mb-4">Commonly Requested Data</h2>
@@ -163,7 +155,7 @@
         Coming soon.
       </p>
     </div>
-  </div> -->
+  </div>
 
   <div class="border-t border-black scroll-mt-[74px]">
     <div class="py-6 mx-auto max-w-prose flex justify-between text-sm">
@@ -177,9 +169,6 @@
       </div>
     </div>
   </div>
-
-  <!-- turtle stack -->
-  <div id="turtle-stack"></div>
 
   <!-- loading cover -->
   <div id="loading-cover"

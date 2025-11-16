@@ -21,3 +21,50 @@ html {
   color: white;
   mix-blend-mode: difference;
 }
+
+/* Turtle stack styles */
+#turtle-stack {
+  position: fixed;
+  bottom: 0;
+  left: 20px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* Hide turtles on smaller screens to avoid overlapping text */
+@media (max-width: 768px) {
+  #turtle-stack {
+    display: none;
+  }
+}
+
+.turtle-item {
+  transition: all 2.5s ease-out;
+  opacity: 0;
+  transform: translateY(-800px);
+  margin-top: -50px;
+}
+
+/* .turtle-item:first-child {
+  margin-top: -500;
+} */
+
+.turtle-item:nth-child(1) {
+  margin-top: -70px;
+}
+
+.turtle-item:nth-child(2) {
+  margin-top: -55px;
+}
+
+.turtle-item:nth-child(3) {
+  margin-top: -45px;
+}
+
+.turtle-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
